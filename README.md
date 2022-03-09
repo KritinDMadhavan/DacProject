@@ -1,24 +1,14 @@
 # Problem Statement 
-This should be a brief description of the domain of your dataset (e.g. if it is the Titanic Dataset then write about the ship, the incident that happened, what you're trying to do with the data).
+The project aims at providing a model to predict the rainfall for a region in india based off historiacal data. 
+
 ## Dataset
 
-The dataset used is the [Name of the Dataset](Download link) from (source of download e.g Kaggle). If the task is a classification task, then you must specify the number of classes and give a 1 line description of each class as follows(example of Iris Dataset). 
+The dataset used is the [Rainfall in India](https://www.kaggle.com/rajanand/rainfall-in-india) from Kaggle.
 
-The 3 class labels are:
-<br>
-
-**1. Iris Setosa:** Given iris flower belongs to the Setosa species
-<br>
-**2. Iris Virginica:** Given iris flower belongs to the Virginica species
-<br>
-**3. Iris Versicolor:** Given iris flower belongs to the Versicolor species
-
-If the task is a regression task, then explain the target variable and give brief statistics.(e.g. Housing Prices)
-
-**Target Variable: SalePrice**
+**Target Variables: January - December**
 <br>
 <br>
-Sale Price refers to the selling price of the house.
+Each column from January to December has the rainfall received correspoinding to the year mentioned in the row from 1901 to 2015
 <br>
 **Mean Selling Price:** 121,000$
 <br>
@@ -29,15 +19,15 @@ Sale Price refers to the selling price of the house.
 
 ## Model(s) Used
 
-This needs to be a description of the model used and a brief overview of how it works in theory (e.g taken of a CNN Model): 
-
-The network architecture used was a basic CNN model, with Max Pooling and ReLU Activation functions. Input images are resized to an optimal size and then fed into the **Convolutional layer**. These images are converted to their pixel values, which can be imagined as a three-dimensional matrix for the purpose of visualization. The **Convolutional layer** has a kernel. This kernel is generally a small matrix of specified kernel size mxnx3 (3 for RGB images). 
+The models that are to be used in this project are:
 <br>
-
-**Rectified Linear Unit (ReLU)** is the activation layer used in CNNs.The activation function is applied to increase non-linearity in the CNN. Images are made of different objects that are not linear to each other.
-
-
-**Max Pooling:** A limitation of the feature map output of Convolutional Layers is that they record the precise position of features in the input. This means that small movements in the position of the feature in the input image will result in a different feature map. This can happen with re-cropping, rotation, shifting, and other minor changes to the input image. A common approach to addressing this problem from signal processing is called down sampling. This is where a lower resolution version of an input signal is created that still contains the large or important structural elements, without the fine detail that may not be as useful to the task.
+<br>
+*ARIMA Model: *
+An autoregressive integrated moving average, or ARIMA, is a statistical analysis model that uses time series data to either better understand the data set or to predict future trends. A statistical model is autoregressive if it predicts future values based on past valuesThe first step in building the ARIMA model is to create an autocorrelation plot on stationary time series data.
+<br>
+<br>
+*ETS Model*
+Exponential Smoothing (ETS) is a commonly-used local statistical algorithm for time-series forecasting. We will be comparing the results of the ARIMA and the ETS Models to find the one with a better fit
 
 ## Future Work
-Good ideas or strategies that you were not able to implement which you think can help  improve performance.
+Implementation of the ETS and ARIMA models and the deployment framework
