@@ -9,13 +9,6 @@ The dataset used is the [Rainfall in India](https://www.kaggle.com/rajanand/rain
 <br>
 <br>
 Each column from January to December has the rainfall received correspoinding to the year mentioned in the row from 1901 to 2015
-<br>
-**Mean Selling Price:** 121,000$
-<br>
-**Max Selling Price:** 1,000,000$
-<br>
-**Min Selling Price:** 45,000$
-
 
 ## Model(s) Used
 
