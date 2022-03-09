@@ -15,11 +15,14 @@ Each column from January to December has the rainfall received correspoinding to
 The models that are to be used in this project are:
 <br>
 <br>
-*ARIMA Model: *
+
+__ARIMA Model:__
+<br><br>
 An autoregressive integrated moving average, or ARIMA, is a statistical analysis model that uses time series data to either better understand the data set or to predict future trends. A statistical model is autoregressive if it predicts future values based on past valuesThe first step in building the ARIMA model is to create an autocorrelation plot on stationary time series data.
 <br>
 <br>
-*ETS Model*
+**ETS Model:**
+<br><br>
 Exponential Smoothing (ETS) is a commonly-used local statistical algorithm for time-series forecasting. We will be comparing the results of the ARIMA and the ETS Models to find the one with a better fit
 
 ## Future Work
